@@ -10,5 +10,11 @@ body {
 .main p {
   color: aliceblue;
 }
+.main .main_paragraph {
+  color: aqua;
+}
+.main .main_paragraph:hover {
+  color: pink;
+}
 
 /*# sourceMappingURL=main.css.map */

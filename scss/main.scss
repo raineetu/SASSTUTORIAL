@@ -26,4 +26,10 @@ body {
     p{
         color: aliceblue;
     }
+    #{&}_paragraph{
+        color: aqua;
+        &:hover{
+            color: pink;
+        }
+    }
 }
