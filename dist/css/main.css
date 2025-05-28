@@ -1,5 +1,14 @@
 body {
-  background: blue;
+  background-color: #272727;
+  font-weight: 700;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+.main p {
+  color: aliceblue;
 }
 
 /*# sourceMappingURL=main.css.map */

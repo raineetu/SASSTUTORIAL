@@ -1,3 +1,29 @@
-body{
-    background: blue;
+// :root{
+//   --primary-color: #272727;
+// }
+// body{
+//   background-color: var(--primary-color);
+// } in plain css
+
+@use "sass:map";
+
+$primary-color: #272727;
+
+$font-weights: (
+  regular: 400,
+  medium: 500,
+  bold: 700
+);
+
+body {
+  background-color: $primary-color;
+  font-weight: map.get($font-weights, bold);
+}
+.main{
+    width: 80%;
+    margin: 0 auto;
+
+    p{
+        color: aliceblue;
+    }
 }
