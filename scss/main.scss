@@ -15,13 +15,27 @@ body {
   font-weight: map.get(variable.$font-weights, bold);
 }
 
-@mixin flexdisplay{
+@mixin flexdisplay($direction){
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: $direction;
 }
+
+@mixin theme($light-theme: true) {
+  @if $light-theme {
+    background-color: lighten($primary-color, 40%);
+    color: darken($text-color, 40%);
+  } @else {
+    background-color: darken($primary-color, 20%);
+    color: lighten($text-color, 20%);
+  }
+}
+
+
+
 .main{
-    @include flexdisplay;
+    @include flexdisplay(row);
     width: 80%;
     margin: 0 auto;
 
