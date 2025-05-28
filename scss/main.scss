@@ -8,6 +8,7 @@
 @use "sass:map";
 @use "./resets";
 @use "./variable";
+@use "./function";
 
 body {
   background-color: variable.$primary-color;
