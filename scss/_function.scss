@@ -2,3 +2,15 @@
 // @function function-name ($parameter1, $parameter2, ...){
 //     @return value
 // }
+
+@use "sass:color";
+
+@function tint($color, $percent) {
+  @return color.mix(white, $color, $percent);
+}
+
+$primary-color: #3498db;
+
+.button {
+  background-color: tint($primary-color, 30%);
+}

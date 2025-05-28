@@ -14,7 +14,14 @@ body {
   background-color: variable.$primary-color;
   font-weight: map.get(variable.$font-weights, bold);
 }
+
+@mixin flexdisplay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .main{
+    @include flexdisplay;
     width: 80%;
     margin: 0 auto;
 
